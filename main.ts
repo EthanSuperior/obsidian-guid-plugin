@@ -91,7 +91,7 @@ export class IDPluginSettingTab extends PluginSettingTab {
         const { containerEl } = this;
         containerEl.empty();
 
-        containerEl.createEl('h2', { text: 'Recent Files List' });
+        containerEl.createEl('h2', { text: 'Add an ID to front matter' });
 
         // Special thanks to tygrosin
         // https://github.com/tgrosinger/recent-files-obsidian/
@@ -106,7 +106,7 @@ export class IDPluginSettingTab extends PluginSettingTab {
         fragment.append(link);
         fragment.append(' for help.');
         new Setting(containerEl)
-        .setName("Add an ID to front matter")
+        .setName("Front matter key")
         .setDesc("Name of the front matter key to use for the ID.")
         .addText((text) =>{
           text
